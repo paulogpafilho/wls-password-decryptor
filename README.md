@@ -4,9 +4,9 @@ Created by Paulo Albuquerque
 
 Email: paulogpafilho@gmail.com
 
-This is a simple Weblogic password decrytor.
+This is a simple Weblogic password decryptor.
 
-Useful if you forgot a password for the admin user or any of the datasources or other domain password.
+Useful if you forgot a password for the admin user, any of the datasources passwords or other domain passwords.
 
 Usage:
 
@@ -24,7 +24,7 @@ Usage:
    example:
    
 ```bash
-   decrypt.cmd /u02/oracle/domains/base_domain /u01/oracle/Middleware/wlserver_10.3
+   decrypt.sh /u02/oracle/domains/base_domain /u01/oracle/Middleware/wlserver_10.3
 ```
 
 The Java program will scan the domain and try to decrypt the passwords from config.xml, boot.properties (if present) and all datasource xml under /config/jdbc/.
